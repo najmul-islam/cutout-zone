@@ -1,12 +1,12 @@
 const SkillCard = ({ icon, figure, suffix, title }) => {
   return (
-    <div className="flex flex-col gap-1 items-center">
-      <span className="text-8xl text-center text-[#3C93A8]">{icon}</span>
+    <div className="flex flex-col items-center gap-1">
+      <span className="mb-2 text-center text-8xl text-[#0979E4]">{icon}</span>
       <h6 className="text-2xl font-medium">
         {figure}
         {suffix}
       </h6>
-      <p>{title}</p>
+      <p className="text-[#999999]">{title}</p>
     </div>
   );
 };

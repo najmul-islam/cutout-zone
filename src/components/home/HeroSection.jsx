@@ -4,27 +4,26 @@ import WordAnimation from "./WordAnimation";
 
 const HeroSection = () => {
   return (
-    <section className="bg-[url(/hero/home-hero-bg.jpg)] bg-cover bg-center py-5 min-h-[80vh]">
-      <div className="container flex flex-col md:flex-row items-center justify-between">
-        <div className="mb-5 flex flex-col gap-3">
-          <h3 className=" text-xl font-bold md:text-3xl lg:text-4xl">
+    <section className="bg-gradient-to-t from-white via-[#F1F1F1] to-white">
+      <div className="container flex flex-col items-center justify-between gap-12 py-10 lg:flex-row">
+        <div className="flex flex-col gap-5 md:mb-0">
+          <h3 className="text-nowrap text-4xl md:text-5xl">
             Are you looking for
           </h3>
-          {/* <Typed /> */}
-          <h3 className=" text-xl font-bold md:text-3xl lg:text-4xl">
+          <h3 className="text-3xl font-medium text-[#0979E4] md:text-4xl">
             <WordAnimation />
           </h3>
-          <h3 className="text-xl font-bold md:text-xl lg:text-xl">
+          <h3 className="text-pretty text-[#999999]">
             Your long Experienced Team can do That for you!
           </h3>
           <ActionButtons />
         </div>
-        <div>
+        <div className="rounded-full bg-[#5FA7EE]">
           <Image
             src="/hero/home-hero-girl.png"
-            className="w-[]"
-            width={600}
-            height={600}
+            // className="w-auto h-auto"
+            width={700}
+            height={700}
           />
         </div>
       </div>

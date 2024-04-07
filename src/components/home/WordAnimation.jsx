@@ -6,6 +6,8 @@ const WordAnimation = () => {
     <Typewriter
       cursor="true"
       loop
+      cursorStyle="_"
+      cursorColor="#0979E4"
       words={["Editing", "Retoucing", "Recoloring"]}
     />
   );
