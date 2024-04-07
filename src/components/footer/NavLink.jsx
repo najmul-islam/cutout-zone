@@ -6,15 +6,14 @@ const NavLink = () => {
     { id: 2, link: "/blog", text: "Blog" },
     { id: 3, link: "/portfolio", text: "Portfolio" },
     { id: 4, link: "/faq", text: "FAQ" },
-    { id: 5, link: "/sitemap", text: "Sitemap" },
   ];
   return (
-    <div className="flex">
+    <div className="flex items-center gap-3">
       {links.map((item) => {
         return (
           <Link
             href={item.link}
-            className="block text-white ml-[10px] font-[14px] transition-all hover:underline"
+            className="font-[14px] text-black transition-all hover:underline"
           >
             {item.text}
           </Link>

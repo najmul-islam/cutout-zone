@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const PricingCard = ({ imgUrl, title, price }) => {
   return (
-    <div className="bg-white p-6 text-center rounded">
+    <div className="rounded bg-[#F8F8F8] p-6 text-center">
       <Image
         src={`/pricing/${imgUrl}`}
         className="m-auto"
@@ -12,8 +12,8 @@ const PricingCard = ({ imgUrl, title, price }) => {
       />
 
       <div className="flex flex-col gap-4">
-        <h4 className="font-medium text-lg">{title}</h4>
-        <p className="text-[#3c93a8]">{price}</p>
+        <h4 className="text-xl font-bold text-[#0979E4]">{title}</h4>
+        <p className="text-[#999999]">{price}</p>
       </div>
     </div>
   );

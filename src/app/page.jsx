@@ -5,7 +5,8 @@ import PricingSection from "@/components/home/PricingSection";
 import WorkSection from "@/components/home/WorkSection";
 import SkillSection from "@/components/home/SkillSection";
 import ReasonSection from "@/components/home/ReasonSection";
-import ActionSection from "@/components/home/ActionSection";
+import ActionSection from "@/components/shared/ActionSection";
+import QuoteForam from "@/components/home/QuoteForam";
 
 const HomePage = () => {
   return (
@@ -14,6 +15,7 @@ const HomePage = () => {
       <FeatureSection />
       <ServiceSection />
       <PricingSection />
+      <QuoteForam />
       <WorkSection />
       <SkillSection />
       <ReasonSection />

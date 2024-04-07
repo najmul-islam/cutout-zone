@@ -8,7 +8,7 @@ const PricingSection = () => {
     <Section className="bg-white">
       <Heading title="Pricing" description="Cheap and Affordable Value" />
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
+      <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-3">
         <PricingCard
           imgUrl="Pricing-ClippingPath.png"
           title="Clipping Path"
@@ -28,10 +28,10 @@ const PricingSection = () => {
         />
       </div>
 
-      <div className="flex justify-center mt-10">
+      <div className="mt-10 flex justify-center">
         <Link
           href="/pricing"
-          className="bg-[#3c93a8] px-10 py-3 rounded text-white "
+          className="rounded bg-[#0979E4] px-4 py-3 font-semibold uppercase tracking-wide text-white hover:shadow-md"
         >
           See all pricing
         </Link>

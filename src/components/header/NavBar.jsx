@@ -21,6 +21,7 @@ import {
   FaFacebookF,
   FaInstagram,
   FaLinkedinIn,
+  FaInfoCircle,
 } from "react-icons/fa";
 import {
   NavigationMenu,
@@ -52,16 +53,19 @@ import {
   AccordionTrigger,
 } from "../ui/accordion";
 import { FaXTwitter } from "react-icons/fa6";
+import { usePathname } from "next/navigation";
 
 const NavBar = () => {
+  const pathname = usePathname();
+  console.log(pathname);
   return (
-    <div className="border-y sticky top-0 bg-white">
-      <div className="container flex justify-between items-center py-3">
+    <div className="sticky top-0 z-50 border-b bg-white">
+      <div className="container flex items-center justify-between bg-white py-3">
         <Link href="/">
           <Image
             src="/logo/cutout-zone.png"
             alt="logo"
-            className="w-[180px] md:w-[260px] m-0 p-0"
+            className="m-0 w-[180px] p-0 md:w-[260px]"
             width={260}
             height={20}
           />
@@ -69,7 +73,9 @@ const NavBar = () => {
         {/* navbar */}
         <NavigationMenu className="hidden md:flex">
           <NavigationMenuList>
-            <NavigationMenuItem>
+            <NavigationMenuItem
+              className={`${pathname === "/" ? "bg[#F1F5F9]" : ""}`}
+            >
               <Link href="/" legacyBehavior passHref>
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                   Home
@@ -81,12 +87,14 @@ const NavBar = () => {
               <Link href="/about">
                 <NavigationMenuTrigger>About</NavigationMenuTrigger>
               </Link>
-              <NavigationMenuContent>
+              <NavigationMenuContent className="z-50">
                 <ul className="grid gap-1 p-3 md:w-[300px] lg:w-[300px] ">
                   <ListItem href="/portfolio" title="Portfolio">
                     <FaRegAddressBook /> Portfolio
                   </ListItem>
-
+                  <ListItem href="/about" title="About">
+                    <FaInfoCircle /> About us
+                  </ListItem>
                   <ListItem href="/faq">
                     <FaQuestionCircle /> FAQ
                   </ListItem>
@@ -146,7 +154,7 @@ const NavBar = () => {
 
                 <Link
                   href="/service"
-                  className="p-4 flex justify-center font-medium hover:underline bg-slate-50 hover:bg-slate-100 transition-all"
+                  className="flex justify-center bg-slate-50 p-4 font-medium transition-all hover:bg-slate-100 hover:underline"
                 >
                   More service
                 </Link>
@@ -180,7 +188,7 @@ const NavBar = () => {
         </NavigationMenu>
 
         {/* drawer */}
-        <Sheet className="md:hidden max-w-[16rem]">
+        <Sheet className="max-w-[16rem] md:hidden">
           <SheetTrigger asChild className="md:hidden">
             <Button variant="outline">
               <TbAlignRight className="text-2xl" />
@@ -208,7 +216,7 @@ const NavBar = () => {
               <Accordion type="single" collapsible className="w-full">
                 <AccordionItem value="item-1" className="">
                   <AccordionTrigger>About</AccordionTrigger>
-                  <AccordionContent className="pl-3 items-center">
+                  <AccordionContent className="items-center pl-3">
                     <SheetClose asChild>
                       <Link
                         href="/portfolio"
@@ -255,7 +263,7 @@ const NavBar = () => {
                 </AccordionItem>
                 <AccordionItem value="item-2">
                   <AccordionTrigger>Service</AccordionTrigger>
-                  <AccordionContent className="pl-3 items-center">
+                  <AccordionContent className="items-center pl-3">
                     <SheetClose asChild>
                       <Link
                         href="/service/clipping-path"
@@ -320,7 +328,7 @@ const NavBar = () => {
 
                     <Link
                       href="/service"
-                      className="p-1 flex justify-center font-medium hover:underline bg-slate-50 hover:bg-slate-100 transition-all rounded"
+                      className="flex justify-center rounded bg-slate-50 p-1 font-medium transition-all hover:bg-slate-100 hover:underline"
                     >
                       More service
                     </Link>
@@ -351,7 +359,7 @@ const NavBar = () => {
             <SheetFooter>
               <a
                 href="mailto:info@cutoutzone.com"
-                className="flex text-muted-foreground items-center text-[14px] text-gray duration-200 ease-in"
+                className="text-gray flex items-center text-[14px] text-muted-foreground duration-200 ease-in"
               >
                 <FaRegEnvelope className="mr-2" />
                 info@cutoutzone.com
@@ -362,7 +370,7 @@ const NavBar = () => {
                     href="https://www.facebook.com/thecutoutzone/"
                     target="_blank"
                   >
-                    <FaFacebookF className="text-primary duration-200 ease-in hover:ease-in group-hover:text-white-900" />
+                    <FaFacebookF className="group-hover:text-white-900 text-primary duration-200 ease-in hover:ease-in" />
                   </a>
                 </li>
                 <li className="group cursor-pointer rounded-full bg-[rgba(0,0,0,0.07)] p-1 duration-200 ease-in hover:bg-primary hover:ease-in">
@@ -370,7 +378,7 @@ const NavBar = () => {
                     href="https://www.instagram.com/the_CutOut_Zone"
                     target="_blank"
                   >
-                    <FaInstagram className="text-primary duration-200 ease-in hover:ease-in group-hover:text-white-900" />
+                    <FaInstagram className="group-hover:text-white-900 text-primary duration-200 ease-in hover:ease-in" />
                   </a>
                 </li>
                 <li className="group cursor-pointer rounded-full bg-[rgba(0,0,0,0.07)] p-1 duration-200 ease-in hover:bg-primary hover:ease-in">
@@ -378,12 +386,12 @@ const NavBar = () => {
                     href="https://www.linkedin.com/company/the-cutout-zone/"
                     target="_blank"
                   >
-                    <FaLinkedinIn className="text-primary duration-200 ease-in hover:ease-in group-hover:text-white-900" />
+                    <FaLinkedinIn className="group-hover:text-white-900 text-primary duration-200 ease-in hover:ease-in" />
                   </a>
                 </li>
                 <li className="group cursor-pointer rounded-full bg-[rgba(0,0,0,0.07)] p-1 duration-200 ease-in hover:bg-primary hover:ease-in">
                   <a href="https://twitter.com/theCutOutZone" target="_blank">
-                    <FaXTwitter className="text-primary duration-200 ease-in hover:ease-in group-hover:text-white-900" />
+                    <FaXTwitter className="group-hover:text-white-900 text-primary duration-200 ease-in hover:ease-in" />
                   </a>
                 </li>
               </ul>
@@ -403,19 +411,19 @@ const ListItem = React.forwardRef(
           <Link
             ref={ref}
             className={cn(
-              "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
-              className
+              `block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground`,
+              className,
             )}
             {...props}
           >
-            <div className="text-sm font-medium leading-none flex gap-2 items-center">
+            <div className="flex items-center gap-2 text-sm font-medium leading-none">
               {children}
             </div>
           </Link>
         </NavigationMenuLink>
       </li>
     );
-  }
+  },
 );
 
 ListItem.displayName = "ListItem";
