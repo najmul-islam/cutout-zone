@@ -2,6 +2,26 @@ import SinglePortfolio from "@/components/portfolio/SinglePortfolio";
 import SubHeader from "@/components/shared/SubHeader";
 import portfolios from "@/data/portfolioData.json";
 
+export async function generateMetadata({ params }) {
+  const getPortfolioBySlug = (slug) => {
+    return portfolios.find((item) => item.slug === slug);
+  };
+
+  const portfilio = getPortfolioBySlug(params.slug);
+
+  return {
+    title: `${portfilio.title} | CutOut Zone`,
+    description: portfilio.description,
+    openGraph: {
+      images: [
+        {
+          url: `/portfolio/${portfilio.imgUrl}`,
+        },
+      ],
+    },
+  };
+}
+
 const SinglePortfolioPage = ({ params }) => {
   // Function to get a portfolio item by slug
   const getPortfolioBySlug = (slug) => {
