@@ -12,7 +12,7 @@ const PortfolioList = () => {
 
         <div className="grid grid-cols-1 place-content-center gap-6 py-20 sm:grid-cols-3">
           {portfolioData.map((portfolio) => (
-            <PortfolioItem key={portfolio.id} item={portfolio} />
+            <PortfolioItem key={portfolio.id} portfolio={portfolio} />
           ))}
         </div>
       </div>

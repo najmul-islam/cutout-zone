@@ -2,14 +2,14 @@ import { MdOutlineOpenInNew, MdOutlineZoomOutMap } from "react-icons/md";
 import Image from "next/image";
 import Link from "next/link";
 
-const PortfolioItem = ({ item }) => {
-  const { imgUrl, title, slug } = item;
+const PortfolioItem = ({ portfolio }) => {
+  const { featured_media, title, slug } = portfolio;
   return (
     <div className="rounded border">
       <div className="relative overflow-hidden rounded-t bg-cover bg-no-repeat">
         <Image
-          src={`/portfolio/${imgUrl}`}
-          alt={`${title}`}
+          src={`/portfolio/${featured_media}`}
+          alt={title}
           width={300}
           height={250}
           className="h-full w-full"
