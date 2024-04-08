@@ -5,6 +5,12 @@ import ReachUsSection from "@/components/contact/ReachUsSection";
 import ActionSection from "@/components/shared/ActionSection";
 import SubHeader from "@/components/shared/SubHeader";
 
+export const metadata = {
+  title: "Contact us best clipping path service | 24 Hours Support",
+  description:
+    "If you have any questions, you can contact us round the clock. Our online support team is ready to help you and take care of your ",
+};
+
 const ContactPage = () => {
   const links = [
     { id: 1, link: "/", title: "Home" },

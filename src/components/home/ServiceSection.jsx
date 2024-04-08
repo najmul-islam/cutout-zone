@@ -1,3 +1,4 @@
+import services from "@/data/serviceData.json";
 import Heading from "./Heading";
 import Section from "./Section";
 import ServiceCard from "./ServiceCard";
@@ -12,7 +13,11 @@ const ServiceSection = () => {
       />
 
       <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-3">
-        <ServiceCard
+        {services.slice(0, 6).map((service) => (
+          <ServiceCard key={service.id} service={service} />
+        ))}
+
+        {/* <ServiceCard
           imgUrl="Homepage-ClippingPath-BackgroundRemove-v2106.jpg"
           title="Clipping Path"
           description="Clipping path is a crucial photo editing the technique helps to remove the background."
@@ -51,7 +56,7 @@ const ServiceSection = () => {
           title="E-Commerce Image Solution"
           description="Best E-Commerce Product Image Solution is essential for any online shops."
           url="/service/e-commerce-photo-editing"
-        />
+        /> */}
       </div>
 
       <div className="mt-10 flex justify-center">
