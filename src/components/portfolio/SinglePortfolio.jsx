@@ -7,7 +7,7 @@ const SinglePortfolio = ({ portfolio, prevPortfolio, nextPortfolio }) => {
     <div className="container flex flex-col gap-10 py-10">
       <div className="m-auto max-w-[600px] rounded border">
         <Image
-          src={`/portfolio/${portfolio.imgUrl}`}
+          src={`/portfolio/${portfolio.featured_media}`}
           alt={portfolio.title}
           width={600}
           height={600}

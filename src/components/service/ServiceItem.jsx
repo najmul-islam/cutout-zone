@@ -1,13 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
-import { FaArrowRight } from "react-icons/fa6";
+import { FaArrowRight } from "react-icons/fa";
 
-const ServiceCard = ({ service }) => {
-  const { title, excerpt, slug, featured_media } = service;
+const ServiceItem = ({ service }) => {
+  const { title, slug, excerpt, featured_media } = service;
   return (
     <Link
       href={`/service/${slug}`}
-      className="rounded bg-white p-6 text-center"
+      className="rounded border bg-white p-6 text-center hover:shadow"
     >
       <Image
         src={`/service/${featured_media}`}
@@ -30,4 +30,4 @@ const ServiceCard = ({ service }) => {
     </Link>
   );
 };
-export default ServiceCard;
+export default ServiceItem;

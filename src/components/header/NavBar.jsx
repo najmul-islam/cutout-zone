@@ -131,8 +131,8 @@ const NavBar = () => {
                     <FaRegImage /> Photo retouching
                   </ListItem>
 
-                  <ListItem href="/service/shadow-creation">
-                    <FaAdjust /> Shadow Creation
+                  <ListItem href="/service/shadow-making">
+                    <FaAdjust /> Shadow Making
                   </ListItem>
 
                   <ListItem href="/service/jewelry-retouching">

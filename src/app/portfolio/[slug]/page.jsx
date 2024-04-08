@@ -1,33 +1,39 @@
+import { notFound } from "next/navigation";
 import SinglePortfolio from "@/components/portfolio/SinglePortfolio";
 import SubHeader from "@/components/shared/SubHeader";
 import portfolios from "@/data/portfolioData.json";
 
 export async function generateMetadata({ params }) {
   const getPortfolioBySlug = (slug) => {
-    return portfolios.find((item) => item.slug === slug);
+    return portfolios.find((item) => item?.slug === slug);
   };
 
   const portfilio = getPortfolioBySlug(params.slug);
 
   return {
-    title: `${portfilio.title} | CutOut Zone`,
-    description: portfilio.description,
+    title: `${portfilio?.title} | CutOut Zone`,
+    description: portfilio?.description,
     openGraph: {
       images: [
         {
-          url: `/portfolio/${portfilio.imgUrl}`,
+          url: `/portfolio/${portfilio?.featured_media}`,
         },
       ],
     },
   };
 }
 
+export async function generateStaticParams() {
+  return portfolios.map((portfoli) => ({
+    slug: portfoli.slug,
+  }));
+}
+
 const SinglePortfolioPage = ({ params }) => {
-  // Function to get a portfolio item by slug
   const getPortfolioBySlug = (slug) => {
     return portfolios.find((item) => item.slug === slug);
   };
-  // Function to get the previous portfolio item
+
   const getPrevPortfolio = (slug) => {
     const currentIndex = portfolios.findIndex((item) => item.slug === slug);
     const prevIndex =
@@ -35,7 +41,6 @@ const SinglePortfolioPage = ({ params }) => {
     return portfolios[prevIndex];
   };
 
-  // Function to get the next portfolio item
   const getNextPortfolio = (slug) => {
     const currentIndex = portfolios.findIndex((item) => item.slug === slug);
     const nextIndex = (currentIndex + 1) % portfolios.length;
@@ -43,6 +48,9 @@ const SinglePortfolioPage = ({ params }) => {
   };
 
   const portfolio = getPortfolioBySlug(params.slug);
+  if (!portfolio) {
+    notFound();
+  }
   const prevPortfolio = getPrevPortfolio(params.slug);
   const nextPortfolio = getNextPortfolio(params.slug);
 
