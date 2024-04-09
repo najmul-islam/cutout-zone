@@ -18,7 +18,7 @@ const ServiceItem = ({ service }) => {
       />
 
       <div className="flex flex-col gap-4">
-        <h4 className="text-xl font-bold text-[#0979E4]">{title}</h4>
+        <h4 className="text-lg font-bold text-[#0979E4] md:text-xl">{title}</h4>
         <p className="text-[#999999]">{excerpt}</p>
         <Link
           href={`/service/${slug}`}
