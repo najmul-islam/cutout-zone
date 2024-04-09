@@ -188,7 +188,7 @@ const NavBar = () => {
         </NavigationMenu>
 
         {/* drawer */}
-        <Sheet className="max-w-[16rem] md:hidden">
+        <Sheet className="w-[16rem] md:hidden">
           <SheetTrigger asChild className="md:hidden">
             <Button variant="outline">
               <TbAlignRight className="text-2xl" />
