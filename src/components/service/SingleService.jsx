@@ -1,9 +1,20 @@
+import Image from "next/image";
+
 const SingleService = ({ service }) => {
+  //prose-h1:text-2xl md:prose-h1:text-3xl
+  const { title, featured_media, content } = service;
   return (
-    <section className="container xl:w-5/12">
+    <section className="container">
+      <Image
+        src={`/service/${featured_media}`}
+        alt={title}
+        width={1000}
+        height={340}
+        className="m-auto h-[240]"
+      />
       <article
-        className="prose prose-h1:text-center prose-h1:text-2xl md:prose-h1:text-3xl m-auto max-w-none px-5 py-10"
-        dangerouslySetInnerHTML={{ __html: service?.content }}
+        className="prose m-auto max-w-none px-5 py-10 prose-h1:text-center prose-h1:text-2xl prose-h2:text-xl md:w-9/12 md:prose-h1:text-3xl md:prose-h2:text-2xl lg:w-7/12"
+        dangerouslySetInnerHTML={{ __html: content }}
       ></article>
     </section>
   );

@@ -3,7 +3,7 @@ import { FaPlay, FaQuoteRight } from "react-icons/fa";
 
 const ActionSection = () => {
   return (
-    <section className="bg-[#0979E4] py-16">
+    <section className="bg-[#0254B1] py-16">
       <div className="container flex flex-col items-center justify-center gap-8 text-center md:flex-row md:justify-between md:text-start">
         <div className=" w-12/12 text-white lg:w-5/12">
           <h2 className="text-3xl font-semibold md:text-4xl">
@@ -17,7 +17,7 @@ const ActionSection = () => {
 
         <div className="flex flex-col gap-2 md:flex-row">
           <Link
-            className="flex items-center justify-center gap-2 text-nowrap rounded bg-[#ffffff] px-10 py-3 font-medium text-[#0979E4] transition-all hover:shadow-lg focus:outline-none focus:ring"
+            className="flex items-center justify-center gap-2 text-nowrap rounded bg-[#ffffff] px-10 py-3 font-medium text-[#0254B1] transition-all hover:shadow-lg focus:outline-none focus:ring"
             href="/free-trial"
           >
             <FaPlay /> Free Trial

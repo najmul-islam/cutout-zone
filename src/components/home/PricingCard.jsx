@@ -12,8 +12,8 @@ const PricingCard = ({ imgUrl, title, price }) => {
       />
 
       <div className="flex flex-col gap-4">
-        <h4 className="text-xl font-bold text-[#0979E4]">{title}</h4>
-        <p className="text-[#999999]">{price}</p>
+        <h4 className="text-xl font-bold text-[#0254B1]">{title}</h4>
+        <p className="text-[#404142]">{price}</p>
       </div>
     </div>
   );

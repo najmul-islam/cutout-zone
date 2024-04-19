@@ -2,7 +2,7 @@ const ReachUsSection = () => {
   return (
     <section>
       <div className="container py-10">
-        <h1 className="mb-8 text-center text-3xl font-semibold text-[#0979E4]">
+        <h1 className="mb-8 text-center text-3xl font-semibold text-[#0254B1]">
           Reach us
         </h1>
 

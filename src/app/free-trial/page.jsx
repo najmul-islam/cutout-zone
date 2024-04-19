@@ -1,3 +1,7 @@
+import Heading from "@/components/free-trial/Heading";
+import TrialForm from "@/components/free-trial/TrialForm";
+import SubHeader from "@/components/shared/SubHeader";
+
 export const metadata = {
   title: "Free Trial for Quality Checking | Submit Your Photo",
   description:
@@ -5,6 +9,21 @@ export const metadata = {
 };
 
 const FreeTrialPage = () => {
-  return <div>FreeTrialPage</div>;
+  const links = [
+    { id: 1, link: "/", title: "Home" },
+    { id: 2, link: "/free-trial", title: "Free Trial" },
+  ];
+
+  return (
+    <>
+      <SubHeader
+        imgUrl="Page-Trial-Subheader.jpg"
+        title="Free Trial"
+        links={links}
+      />
+      <Heading />
+      <TrialForm />
+    </>
+  );
 };
 export default FreeTrialPage;

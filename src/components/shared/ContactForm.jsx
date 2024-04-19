@@ -78,7 +78,7 @@ const ContactForm = () => {
 
       <button
         type="submit"
-        className="flex w-40 items-center justify-center text-nowrap rounded bg-[#0979E4] px-10 py-3 font-medium text-white transition-all hover:bg-[#097ae4ea] hover:shadow-lg focus:outline-none focus:ring"
+        className="flex w-40 items-center justify-center text-nowrap rounded bg-[#0254B1] px-10 py-3 font-medium text-white transition-all hover:bg-[#0254B1ea] hover:shadow-lg focus:outline-none focus:ring"
       >
         Send message
       </button>

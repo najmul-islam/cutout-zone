@@ -10,33 +10,39 @@ const WorkSection = () => {
         description="Our working process at a glance."
       />
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-5">
+      <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6">
         <WorkCard
           imgUrl="icon-delivery.png"
+          title="Client Service Selection and Ordering"
           description="Firstly, our clients select a necessary service and give an order."
         />
 
         <WorkCard
           imgUrl="icon-download.png"
+          title="Image Transfer to Production Manager"
           description="Then we proceed to transfer all the downloaded images to the production manager."
         />
 
         <WorkCard
           imgUrl="icon-networking.png"
+          title="Sorting Images for Post-Production"
           description="Then we sort them out and send them to the post-production."
         />
 
         <WorkCard
           imgUrl="icon-palette.png"
+          title="Assigning Expert Designers to Project Work"
           description="Then assigned our expert designers to begin the related work."
         />
         <WorkCard
           imgUrl="icon-list.png"
+          title="Quality Check by QC Team"
           description="Then our qualified QC team checks them to ensure their quality."
         />
 
         <WorkCard
           imgUrl="icon-order.png"
+          title="Final Check and Client Delivery"
           description="Then we make a final check and render them to our clients as instructed."
         />
       </div>

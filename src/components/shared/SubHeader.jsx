@@ -5,7 +5,7 @@ import { IoIosArrowForward } from "react-icons/io";
 
 const SubHeader = ({ imgUrl, title, links }) => {
   return (
-    <div className="relative z-0 h-52 bg-[#0979E4] bg-cover bg-center bg-no-repeat">
+    <div className="relative z-0 h-52 bg-[#0254B1] bg-cover bg-center bg-no-repeat">
       <Image
         src={`/subheader/${imgUrl}`}
         alt={imgUrl}
@@ -13,7 +13,7 @@ const SubHeader = ({ imgUrl, title, links }) => {
         width={1920}
         height={200}
       />
-      <div className="absolute inset-0 bg-[#0979E4] opacity-80"></div>
+      <div className="absolute inset-0 bg-[#0254B1] opacity-80"></div>
       <div className="absolute inset-0 flex flex-col items-center justify-center">
         <h2 className="mb-3 text-2xl font-semibold text-[#eeeeee] lg:text-4xl">
           {title}

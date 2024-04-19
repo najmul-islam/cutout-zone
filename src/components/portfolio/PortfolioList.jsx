@@ -5,7 +5,7 @@ const PortfolioList = () => {
   return (
     <section className="py-10">
       <div className="container">
-        <h1 className="text-center text-2xl font-bold text-[#0979E4] md:text-4xl">
+        <h1 className="text-center text-2xl font-bold text-[#0254B1] md:text-4xl">
           See our amazing works
         </h1>
         <p className="my-3 text-center">Explore Our Creative Portfolio</p>

@@ -6,7 +6,7 @@ import WorkSection from "@/components/home/WorkSection";
 import SkillSection from "@/components/home/SkillSection";
 import ReasonSection from "@/components/home/ReasonSection";
 import ActionSection from "@/components/shared/ActionSection";
-import QuoteForam from "@/components/home/QuoteForam";
+import QuoteForm from "@/components/home/QuoteForm";
 
 export const metadata = {
   title: "Cut Out service | image excellence service provider",
@@ -21,7 +21,7 @@ const HomePage = () => {
       <FeatureSection />
       <ServiceSection />
       <PricingSection />
-      <QuoteForam />
+      <QuoteForm />
       <WorkSection />
       <SkillSection />
       <ReasonSection />

@@ -40,7 +40,7 @@ const SecurityFaq = () => {
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-3">
-            <AccordionTrigger className="text-lg">
+            <AccordionTrigger className="text-start text-lg">
               What information do I have to provide to get your service?
             </AccordionTrigger>
             <AccordionContent className="text-justify text-base">
@@ -53,7 +53,7 @@ const SecurityFaq = () => {
           </AccordionItem>
 
           <AccordionItem value="item-4">
-            <AccordionTrigger className="text-lg">
+            <AccordionTrigger className="text-start text-lg">
               What information do I have to provide to get your service?
             </AccordionTrigger>
             <AccordionContent className="text-justify text-base">
@@ -66,7 +66,7 @@ const SecurityFaq = () => {
           </AccordionItem>
 
           <AccordionItem value="item-5" className="border-b-0">
-            <AccordionTrigger className="text-lg">
+            <AccordionTrigger className="text-start text-lg">
               How can I contact you?
             </AccordionTrigger>
             <AccordionContent className="text-justify text-base">

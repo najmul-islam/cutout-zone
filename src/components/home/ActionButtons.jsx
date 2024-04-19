@@ -5,7 +5,7 @@ const ActionButtons = () => {
   return (
     <div className="flex flex-col gap-2 md:flex-row">
       <Link
-        className="flex items-center justify-center gap-2 text-nowrap rounded bg-[#0979E4] px-10 py-3 font-medium text-white transition-all hover:bg-[#097ae4ea] hover:shadow-lg focus:outline-none focus:ring"
+        className="flex items-center justify-center gap-2 text-nowrap rounded bg-[#0254B1] px-10 py-3 font-medium text-white transition-all hover:bg-[#097ae4ea] hover:shadow-lg focus:outline-none focus:ring"
         href="/free-trial"
       >
         <FaPlay /> Free Trial

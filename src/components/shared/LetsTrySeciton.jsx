@@ -19,7 +19,7 @@ const LetsTrySeciton = () => {
         </p>
 
         <Link
-          className="m-auto flex w-48 items-center justify-center gap-2 text-nowrap rounded bg-[#0979E4] py-3 font-medium text-[#ffffff] hover:shadow-lg"
+          className="m-auto flex w-48 items-center justify-center gap-2 text-nowrap rounded bg-[#0254B1] py-3 font-medium text-[#ffffff] hover:shadow-lg"
           href="/free-trial"
         >
           <FaRegEye />

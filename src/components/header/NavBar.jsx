@@ -57,7 +57,6 @@ import { usePathname } from "next/navigation";
 
 const NavBar = () => {
   const pathname = usePathname();
-  console.log(pathname);
   return (
     <div className="sticky top-0 z-50 border-b bg-white">
       <div className="container flex items-center justify-between bg-white py-3">
@@ -67,7 +66,7 @@ const NavBar = () => {
             alt="logo"
             className="m-0 w-[180px] p-0 md:w-[260px]"
             width={260}
-            height={20}
+            height={37}
           />
         </Link>
         {/* navbar */}
@@ -190,7 +189,7 @@ const NavBar = () => {
         {/* drawer */}
         <Sheet className="w-[16rem] md:hidden">
           <SheetTrigger asChild className="md:hidden">
-            <Button variant="outline">
+            <Button variant="outline" aria-label="hamberger-menu">
               <TbAlignRight className="text-2xl" />
             </Button>
           </SheetTrigger>
@@ -225,7 +224,14 @@ const NavBar = () => {
                         <FaRegAddressBook /> Portfolio
                       </Link>
                     </SheetClose>
-
+                    <SheetClose asChild>
+                      <Link
+                        href="/about"
+                        className="flex items-center gap-2 py-2 text-sm font-medium"
+                      >
+                        <FaInfoCircle /> About us
+                      </Link>
+                    </SheetClose>
                     <SheetClose asChild>
                       <Link
                         href="/faq"

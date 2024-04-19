@@ -7,18 +7,18 @@ import { notFound } from "next/navigation";
 
 export async function generateMetadata({ params }) {
   const getPortfolioBySlug = (slug) => {
-    return services.find((service) => service.slug === slug);
+    return services.find((service) => service?.slug === slug);
   };
 
-  const service = getPortfolioBySlug(params.slug);
+  const service = getPortfolioBySlug(params?.slug);
 
   return {
-    title: `${services?.title} | CutOut Zone`,
-    description: services?.excerpt,
+    title: service?.meta_title,
+    description: service?.meta_description,
     openGraph: {
       images: [
         {
-          url: `/service/${service?.featured_media}`,
+          url: `/service/og/${service.og_media}`,
         },
       ],
     },
@@ -31,27 +31,27 @@ export async function generateStaticParams() {
   }));
 }
 
+const getServiceBySlug = (slug) => {
+  return services.find((item) => item.slug === slug);
+};
+
+const shuffleArray = (array) => {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
+};
+
+const getRelatedServices = (slug) => {
+  const otherServices = services.filter((item) => item.slug !== slug);
+  const shuffledServices = shuffleArray(otherServices);
+  const selectedServices = shuffledServices.slice(0, 4);
+
+  return selectedServices;
+};
+
 const SingleServicePage = ({ params }) => {
-  const getServiceBySlug = (slug) => {
-    return services.find((item) => item.slug === slug);
-  };
-
-  const shuffleArray = (array) => {
-    for (let i = array.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [array[i], array[j]] = [array[j], array[i]];
-    }
-    return array;
-  };
-
-  const getRelatedServices = (slug) => {
-    const otherServices = services.filter((item) => item.slug !== slug);
-    const shuffledServices = shuffleArray(otherServices);
-    const selectedServices = shuffledServices.slice(0, 4);
-
-    return selectedServices;
-  };
-
   const service = getServiceBySlug(params.slug);
   if (!service) {
     notFound();
