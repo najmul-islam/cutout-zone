@@ -3,35 +3,36 @@ import Link from "next/link";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 const SinglePortfolio = ({ portfolio, prevPortfolio, nextPortfolio }) => {
+  const { featured_media, title, description } = portfolio;
   return (
-    <div className="container flex flex-col gap-10 py-10">
-      <div className="m-auto max-w-[600px] rounded border">
+    <div className="container flex flex-col items-center gap-5 py-10">
+      <div className="max-w-lg">
+        <h2 className="py-2 text-center text-lg font-semibold text-black opacity-90 md:text-2xl">
+          {title}
+        </h2>
+        <p className="mb-5 text-center">{description}</p>
+      </div>
+
+      <div className="flex items-center justify-center gap-2">
+        <Link
+          title="Prev"
+          href={`/portfolio/${prevPortfolio.slug}`}
+          className="flex items-center rounded-full bg-[#0254B1] p-2 text-xl font-bold text-white transition-all duration-100"
+        >
+          <IoIosArrowBack className="" />
+        </Link>
         <Image
-          src={`/portfolio/${portfolio.featured_media}`}
+          src={`/portfolio/${featured_media}`}
           alt={portfolio.title}
           width={600}
           height={600}
-          className="m-auto h-full w-full"
+          className="m-auto h-[100%] w-[90%] rounded border md:h-full md:w-full"
         />
-        <h2 className="bg-[#0979E4] px-3 py-2 text-center text-lg font-semibold text-white opacity-90 md:text-2xl">
-          {portfolio.title}
-        </h2>
-      </div>
-
-      <div className="m-auto flex items-center justify-between gap-4 border-b border-t py-2">
         <Link
-          href={`/portfolio/${prevPortfolio.slug}`}
-          className="flex items-center text-sm font-bold transition-all duration-100 hover:text-[#0979E4] hover:underline"
-        >
-          <IoIosArrowBack className="" /> Previous
-          {/* <span>{prevPortfolio.title}</span> */}
-        </Link>
-
-        <Link
+          title="Next"
           href={`/portfolio/${nextPortfolio.slug}`}
-          className="flex items-center text-sm font-bold transition-all duration-100 hover:text-[#0979E4] hover:underline"
+          className="flex items-center rounded-full bg-[#0254B1] p-2 text-xl font-bold text-white transition-all duration-100"
         >
-          {/* {nextPortfolio.title} */} Next
           <IoIosArrowForward />
         </Link>
       </div>

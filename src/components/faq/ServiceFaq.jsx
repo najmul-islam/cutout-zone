@@ -18,7 +18,7 @@ const ServiceFaq = () => {
 
         <Accordion type="single" collapsible className="w-full">
           <AccordionItem value="item-1">
-            <AccordionTrigger className="text-start text-lg">
+            <AccordionTrigger className="text-start text-lg tracking-widest">
               How can I send & receive my images?
             </AccordionTrigger>
             <AccordionContent className="text-justify text-base">

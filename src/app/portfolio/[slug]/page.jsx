@@ -11,8 +11,8 @@ export async function generateMetadata({ params }) {
   const portfilio = getPortfolioBySlug(params.slug);
 
   return {
-    title: `${portfilio?.title} | CutOut Zone`,
-    description: portfilio?.description,
+    title: `${portfilio?.meta_title} | CutOut Zone`,
+    description: portfilio?.meta_description,
     openGraph: {
       images: [
         {
@@ -29,24 +29,23 @@ export async function generateStaticParams() {
   }));
 }
 
+const getPortfolioBySlug = (slug) => {
+  return portfolios.find((item) => item.slug === slug);
+};
+
+const getPrevPortfolio = (slug) => {
+  const currentIndex = portfolios.findIndex((item) => item.slug === slug);
+  const prevIndex = (currentIndex - 1 + portfolios.length) % portfolios.length;
+  return portfolios[prevIndex];
+};
+
+const getNextPortfolio = (slug) => {
+  const currentIndex = portfolios.findIndex((item) => item.slug === slug);
+  const nextIndex = (currentIndex + 1) % portfolios.length;
+  return portfolios[nextIndex];
+};
+
 const SinglePortfolioPage = ({ params }) => {
-  const getPortfolioBySlug = (slug) => {
-    return portfolios.find((item) => item.slug === slug);
-  };
-
-  const getPrevPortfolio = (slug) => {
-    const currentIndex = portfolios.findIndex((item) => item.slug === slug);
-    const prevIndex =
-      (currentIndex - 1 + portfolios.length) % portfolios.length;
-    return portfolios[prevIndex];
-  };
-
-  const getNextPortfolio = (slug) => {
-    const currentIndex = portfolios.findIndex((item) => item.slug === slug);
-    const nextIndex = (currentIndex + 1) % portfolios.length;
-    return portfolios[nextIndex];
-  };
-
   const portfolio = getPortfolioBySlug(params.slug);
   if (!portfolio) {
     notFound();

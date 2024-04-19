@@ -37,15 +37,15 @@ const services = [
 const Services = () => {
   return (
     <div>
-      <h6 className="mb-3 text-xl font-semibold text-[#0979E4]">Services</h6>
+      <h6 className="mb-3 text-xl font-semibold text-[#0254B1]">Services</h6>
       <ul className="flex flex-col gap-2">
         {services.map((item) => (
           <li
             key={item.id}
-            className="transition-all duration-200 hover:ml-1 hover:text-[#0979E4] hover:underline"
+            className="transition-all duration-200 hover:ml-1 hover:text-[#0254B1] hover:underline"
           >
             <Link href={item.link} className="flex items-center gap-1">
-              <IoIosArrowRoundForward className="text-xl text-[#0979E4]" />{" "}
+              <IoIosArrowRoundForward className="text-xl text-[#0254B1]" />{" "}
               {item.text}
             </Link>
           </li>

@@ -5,7 +5,7 @@ const PricingPlanSection = () => {
     <section className="py-20">
       <div className="container flex flex-col gap-20">
         <div>
-          <h1 className="mb-6 text-center text-2xl font-bold text-[#0979E4] md:text-4xl">
+          <h1 className="mb-6 text-center text-2xl font-bold text-[#0254B1] md:text-4xl">
             Choose your perfect pricing plan
           </h1>
           <p className="m-auto text-center md:w-3/4 lg:w-2/4">
@@ -18,7 +18,7 @@ const PricingPlanSection = () => {
 
         <div className="overflow-x-auto">
           <table className="table-auto text-center md:w-full">
-            <thead className="border bg-[#0979E4] text-center text-lg text-white md:text-2xl">
+            <thead className="border bg-[#0254B1] text-center text-lg text-white md:text-2xl">
               <tr>
                 <th scope="col" className="border px-6 py-3">
                   Service
@@ -162,7 +162,7 @@ const PricingPlanSection = () => {
                 <td className="border px-6 py-4">
                   <Link
                     href="/free-trial"
-                    className="text-nowrap rounded bg-[#0979E4] px-3 py-2 text-white hover:bg-[#097ae4ec] hover:shadow-lg"
+                    className="text-nowrap rounded bg-[#0254B1] px-3 py-2 text-white hover:bg-[#097ae4ec] hover:shadow-lg"
                   >
                     Order Now
                   </Link>
@@ -170,7 +170,7 @@ const PricingPlanSection = () => {
                 <td className="border px-6 py-4 ">
                   <Link
                     href="/free-trial"
-                    className="text-nowrap rounded bg-[#0979E4] px-3 py-2 text-white hover:bg-[#097ae4ec] hover:shadow-lg"
+                    className="text-nowrap rounded bg-[#0254B1] px-3 py-2 text-white hover:bg-[#097ae4ec] hover:shadow-lg"
                   >
                     Order Now
                   </Link>
@@ -178,7 +178,7 @@ const PricingPlanSection = () => {
                 <td className="border px-6 py-4">
                   <Link
                     href="/free-trial"
-                    className="text-nowrap rounded bg-[#0979E4] px-3 py-2 text-white hover:bg-[#097ae4ec] hover:shadow-lg"
+                    className="text-nowrap rounded bg-[#0254B1] px-3 py-2 text-white hover:bg-[#097ae4ec] hover:shadow-lg"
                   >
                     Order Now
                   </Link>

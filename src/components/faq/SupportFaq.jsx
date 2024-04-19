@@ -69,6 +69,7 @@ const SupportFaq = () => {
             <AccordionTrigger className="text-start text-lg">
               Can I get instant support from you?
             </AccordionTrigger>
+
             <AccordionContent className="text-justify text-base">
               Yes, you can get our instant support from us. As we have a support
               team who work hard and stay online round the clock to take care of

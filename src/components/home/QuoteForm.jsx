@@ -1,7 +1,6 @@
 "use client";
-import { useState } from "react";
-import { useForm } from "react-hook-form";
 import Section from "./Section";
+import { useForm } from "react-hook-form";
 import { MdErrorOutline } from "react-icons/md";
 
 const QuoteForam = () => {
@@ -15,7 +14,7 @@ const QuoteForam = () => {
     console.log(data);
   };
   return (
-    <Section className="bg-[#0979E4]">
+    <Section className="bg-[#0254B1]">
       <div className="mb-10">
         <h2 className="py-3 text-center text-3xl font-semibold text-white lg:text-4xl">
           Get Your Quote in 45 Minutes
@@ -31,12 +30,14 @@ const QuoteForam = () => {
         className={`bg:#F1F1F1 m-auto flex max-w-lg flex-col justify-center gap-3 md:max-w-3xl md:flex-row`}
       >
         <div className="w-full">
+          <label htmlFor="service"></label>
           <select
             name="service"
             id="service"
             {...register("service", {
               required: "Service is required",
             })}
+            aria-label="select-service"
             className={`w-full rounded border-2 p-3 ${errors?.service ? "border-red-600 focus:border-red-600" : "border-slate-300 focus:border-[#0979E4]"}`}
           >
             <option value="">Service Type (required)</option>

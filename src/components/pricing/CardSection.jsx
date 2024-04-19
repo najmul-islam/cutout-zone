@@ -3,7 +3,7 @@ import Image from "next/image";
 const CardSection = () => {
   return (
     <section className="py-10">
-      <div className="container rounded bg-[#0979E4] px-4 py-10 text-white">
+      <div className="container rounded bg-[#0254B1] px-4 py-10 text-white">
         <h1 className="mb-3 text-center text-2xl font-bold md:text-4xl">
           Fast and secure checkout
         </h1>

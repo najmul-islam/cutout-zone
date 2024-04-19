@@ -3,11 +3,11 @@ import { FaRegMap } from "react-icons/fa6";
 const Address = () => {
   return (
     <div>
-      <h6 className="mb-3 text-xl font-semibold text-[#0979E4]">Address</h6>
+      <h6 className="mb-3 text-xl font-semibold text-[#0254B1]">Address</h6>
 
       <div className="mb-3 flex flex-col gap-1">
         <h6 className="flex items-center gap-2 text-lg">
-          <FaRegMap className="text-xl text-[#0979E4]" />
+          <FaRegMap className="text-xl text-[#0254B1]" />
           Singapore office
         </h6>
         <p className="ml-7 text-sm">
@@ -17,7 +17,7 @@ const Address = () => {
 
       <div className="mb-3 flex flex-col gap-1">
         <h6 className="flex items-center gap-2 text-lg">
-          <FaRegMap className="text-xl text-[#0979E4]" />
+          <FaRegMap className="text-xl text-[#0254B1]" />
           Bangladesh office
         </h6>
         <p className="ml-7 text-sm">

@@ -10,10 +10,10 @@ const HeroSection = () => {
           <h3 className="text-nowrap text-4xl md:text-5xl">
             Are you looking for
           </h3>
-          <h3 className="text-3xl font-medium text-[#0979E4] md:text-4xl">
+          <h3 className="text-3xl font-medium text-[#0254B1] md:text-4xl">
             <WordAnimation />
           </h3>
-          <h3 className="text-pretty text-[#999999]">
+          <h3 className="text-pretty text-[#404142]">
             Your long Experienced Team can do That for you!
           </h3>
           <ActionButtons />
@@ -22,8 +22,10 @@ const HeroSection = () => {
           <Image
             src="/hero/home-hero-girl.png"
             // className="w-auto h-auto"
+            className=""
             width={700}
             height={700}
+            alt="home-hero-girl"
           />
         </div>
       </div>
