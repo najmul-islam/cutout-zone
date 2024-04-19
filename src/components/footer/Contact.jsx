@@ -10,6 +10,7 @@ const Contact = () => {
           <Link
             href="mailto:info@cutoutzone.com"
             className="flex items-center gap-2"
+            aria-label="email"
           >
             <IoMailOutline className="text-xl text-[#0254B1]" />
             info@cutoutzone.com
@@ -19,6 +20,7 @@ const Contact = () => {
           <Link
             href="mailto:infocutoutzone@gmail.com"
             className="flex items-center gap-2"
+            aria-label="gmail"
           >
             <IoMailOutline className="text-xl text-[#0254B1]" />
             infocutoutzone@gmail.com
@@ -28,6 +30,7 @@ const Contact = () => {
           <Link
             href="skype:live:CutOutZone?chat"
             className="flex items-center gap-2"
+            aria-label="skype"
           >
             <IoVideocamOutline className="text-xl text-[#0254B1]" />
             live:cutoutzone

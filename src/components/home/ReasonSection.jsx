@@ -19,8 +19,13 @@ const ReasonSection = () => {
         description="We are one of the best Cut Out service provider around the world."
       />
 
-      <div className="grid grid-cols-1 md:grid-cols-2 align-middle items-center">
-        <Image src="/reason/Page-Home-GP-Reason.png" width={600} height={600} />
+      <div className="grid grid-cols-1 items-center align-middle md:grid-cols-2">
+        <Image
+          src="/reason/Page-Home-GP-Reason.png"
+          width={600}
+          height={600}
+          alt="Page-Home-GP-Reason"
+        />
 
         <ul className="flex flex-col gap-3">
           <ReasonCard

@@ -17,6 +17,7 @@ const SinglePortfolio = ({ portfolio, prevPortfolio, nextPortfolio }) => {
         <Link
           title="Prev"
           href={`/portfolio/${prevPortfolio.slug}`}
+          aria-label={prevPortfolio.slug}
           className="flex items-center rounded-full bg-[#0254B1] p-2 text-xl font-bold text-white transition-all duration-100"
         >
           <IoIosArrowBack className="" />
@@ -31,6 +32,7 @@ const SinglePortfolio = ({ portfolio, prevPortfolio, nextPortfolio }) => {
         <Link
           title="Next"
           href={`/portfolio/${nextPortfolio.slug}`}
+          aria-label={nextPortfolio.slug}
           className="flex items-center rounded-full bg-[#0254B1] p-2 text-xl font-bold text-white transition-all duration-100"
         >
           <IoIosArrowForward />

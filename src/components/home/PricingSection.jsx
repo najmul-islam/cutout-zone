@@ -31,6 +31,7 @@ const PricingSection = () => {
       <div className="mt-10 flex justify-center">
         <Link
           href="/pricing"
+          aria-label="pricing"
           className="rounded bg-[#0254B1] px-4 py-3 text-sm font-semibold uppercase tracking-widest text-white hover:shadow-md"
         >
           See all pricing

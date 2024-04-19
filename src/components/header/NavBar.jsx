@@ -60,7 +60,7 @@ const NavBar = () => {
   return (
     <div className="sticky top-0 z-50 border-b bg-white">
       <div className="container flex items-center justify-between bg-white py-3">
-        <Link href="/">
+        <Link href="/" aria-label="home">
           <Image
             src="/logo/cutout-zone.png"
             alt="logo"
@@ -75,7 +75,7 @@ const NavBar = () => {
             <NavigationMenuItem
               className={`${pathname === "/" ? "bg[#F1F5F9]" : ""}`}
             >
-              <Link href="/" legacyBehavior passHref>
+              <Link href="/" aria-label="home" legacyBehavior passHref>
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                   Home
                 </NavigationMenuLink>
@@ -83,76 +83,108 @@ const NavBar = () => {
             </NavigationMenuItem>
 
             <NavigationMenuItem>
-              <Link href="/about">
+              <Link href="/about" aria-label="about">
                 <NavigationMenuTrigger>About</NavigationMenuTrigger>
               </Link>
               <NavigationMenuContent className="z-50">
                 <ul className="grid gap-1 p-3 md:w-[300px] lg:w-[300px] ">
-                  <ListItem href="/portfolio" title="Portfolio">
+                  <ListItem
+                    href="/portfolio"
+                    aria-label="portfolio"
+                    title="Portfolio"
+                  >
                     <FaRegAddressBook /> Portfolio
                   </ListItem>
-                  <ListItem href="/about" title="About">
+                  <ListItem href="/about" aria-label="about" title="About">
                     <FaInfoCircle /> About us
                   </ListItem>
-                  <ListItem href="/faq">
+                  <ListItem href="/faq" aria-label="faq">
                     <FaQuestionCircle /> FAQ
                   </ListItem>
 
-                  <ListItem href="/blog">
+                  <ListItem href="/blog" aria-label="blog">
                     <FaBlogger /> Blog
                   </ListItem>
 
-                  <ListItem href="/terms-of-service">
+                  <ListItem
+                    href="/terms-of-service"
+                    aria-label="terms-of-service"
+                  >
                     <FaHammer /> Terms Of Service
                   </ListItem>
 
-                  <ListItem href="/privacy-policy">
+                  <ListItem href="/privacy-policy" aria-label="privacy-policy">
                     <FaLock /> Privacy Policy{" "}
                   </ListItem>
                 </ul>
               </NavigationMenuContent>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <Link href="/service">
+              <Link href="/service" aria-label="service">
                 <NavigationMenuTrigger>Service</NavigationMenuTrigger>
               </Link>
               <NavigationMenuContent className="origin-top-left">
                 <ul className="grid w-[450px] gap-2 p-2 md:grid-cols-2">
-                  <ListItem href="/service/clipping-path">
+                  <ListItem
+                    href="/service/clipping-path"
+                    aria-label="/service/clipping-path"
+                  >
                     <FaPaperclip /> Clipping Path
                   </ListItem>
 
-                  <ListItem href="/service/ghost-mannequin">
+                  <ListItem
+                    href="/service/ghost-mannequin"
+                    aria-label="/service/ghost-mannequin"
+                  >
                     <FaDrupal /> Ghost mannequin
                   </ListItem>
 
-                  <ListItem href="/service/photo-retouching">
+                  <ListItem
+                    href="/service/photo-retouching"
+                    aria-label="/service/photo-retouching"
+                  >
                     <FaRegImage /> Photo retouching
                   </ListItem>
 
-                  <ListItem href="/service/shadow-making">
+                  <ListItem
+                    href="/service/shadow-making"
+                    aria-label="/service/shadow-making"
+                  >
                     <FaAdjust /> Shadow Making
                   </ListItem>
 
-                  <ListItem href="/service/jewelry-retouching">
+                  <ListItem
+                    href="/service/jewelry-retouching"
+                    aria-label="/service/jewelry-retouching"
+                  >
                     <FaRegLifeRing /> Jewelry Retouching
                   </ListItem>
 
-                  <ListItem href="/service/headshot-retouching">
+                  <ListItem
+                    href="/service/headshot-retouching"
+                    aria-label="/service/headshot-retouching"
+                  >
                     <FaCamera /> Headshot Retouching
                   </ListItem>
 
-                  <ListItem href="/service/image-masking">
+                  <ListItem
+                    href="/service/image-masking"
+                    aria-label="/service/image-masking"
+                  >
                     <FaTheaterMasks /> Image Masking
                   </ListItem>
 
-                  <ListItem href="/service/color-correction">
+                  <ListItem
+                    href="/service/color-correction"
+                    aria-label="/service/color-correction"
+                  >
                     <FaPalette /> Color Correction
                   </ListItem>
                 </ul>
 
                 <Link
                   href="/service"
+                  aria-label="/service"
                   className="flex justify-center bg-slate-50 p-4 font-medium transition-all hover:bg-slate-100 hover:underline"
                 >
                   More service
@@ -161,7 +193,12 @@ const NavBar = () => {
             </NavigationMenuItem>
 
             <NavigationMenuItem>
-              <Link href="/pricing" legacyBehavior passHref>
+              <Link
+                href="/pricing"
+                aria-label="/pricing"
+                legacyBehavior
+                passHref
+              >
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                   Pricing
                 </NavigationMenuLink>
@@ -169,7 +206,12 @@ const NavBar = () => {
             </NavigationMenuItem>
 
             <NavigationMenuItem>
-              <Link href="/free-trial" legacyBehavior passHref>
+              <Link
+                href="/free-trial"
+                aria-label="/free-trial"
+                legacyBehavior
+                passHref
+              >
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                   Free Trial
                 </NavigationMenuLink>
@@ -177,7 +219,12 @@ const NavBar = () => {
             </NavigationMenuItem>
 
             <NavigationMenuItem>
-              <Link href="/contact" legacyBehavior passHref>
+              <Link
+                href="/contact"
+                aria-label="/contact"
+                legacyBehavior
+                passHref
+              >
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                   Contact
                 </NavigationMenuLink>
@@ -207,7 +254,11 @@ const NavBar = () => {
             <Separator className="my-3" />
             <div className="grid">
               <SheetClose asChild>
-                <Link href="/" className="py-4 text-sm font-medium">
+                <Link
+                  href="/"
+                  aria-label="home"
+                  className="py-4 text-sm font-medium"
+                >
                   Home
                 </Link>
               </SheetClose>
@@ -219,6 +270,7 @@ const NavBar = () => {
                     <SheetClose asChild>
                       <Link
                         href="/portfolio"
+                        aria-label="portfolio"
                         className="flex items-center gap-2 py-2 text-sm font-medium"
                       >
                         <FaRegAddressBook /> Portfolio
@@ -227,6 +279,7 @@ const NavBar = () => {
                     <SheetClose asChild>
                       <Link
                         href="/about"
+                        aria-label="about"
                         className="flex items-center gap-2 py-2 text-sm font-medium"
                       >
                         <FaInfoCircle /> About us
@@ -235,6 +288,7 @@ const NavBar = () => {
                     <SheetClose asChild>
                       <Link
                         href="/faq"
+                        aria-label="faq"
                         className="flex items-center gap-2 py-2 text-sm font-medium "
                       >
                         <FaQuestionCircle /> FAQ
@@ -243,6 +297,7 @@ const NavBar = () => {
                     <SheetClose asChild>
                       <Link
                         href="/blog"
+                        aria-label="blog"
                         className="flex items-center gap-2 py-2 text-sm font-medium"
                       >
                         <FaBlogger /> Blog
@@ -252,6 +307,7 @@ const NavBar = () => {
                     <SheetClose asChild>
                       <Link
                         href="/terms-of-service"
+                        aria-label="terms-of-service"
                         className="flex items-center gap-2 py-2 text-sm font-medium"
                       >
                         <FaHammer /> Terms Of Service
@@ -260,6 +316,7 @@ const NavBar = () => {
                     <SheetClose asChild>
                       <Link
                         href="/privacy-policy"
+                        aria-label="privacy-policy"
                         className="flex items-center gap-2 py-2 text-sm font-medium"
                       >
                         <FaLock /> Privacy Policy
@@ -273,6 +330,7 @@ const NavBar = () => {
                     <SheetClose asChild>
                       <Link
                         href="/service/clipping-path"
+                        aria-label="/service/clipping-path"
                         className="flex items-center gap-2 py-2 text-sm font-medium"
                       >
                         <FaPaperclip /> Clipping Path
@@ -280,6 +338,7 @@ const NavBar = () => {
                     </SheetClose>
                     <SheetClose asChild>
                       <Link
+                        aria-label="/service/ghost-mannequin"
                         href="/service/ghost-mannequin"
                         className="flex items-center gap-2 py-2 text-sm font-medium"
                       >
@@ -288,6 +347,7 @@ const NavBar = () => {
                     </SheetClose>
                     <SheetClose asChild>
                       <Link
+                        aria-label="/service/photo-retouching"
                         href="/service/photo-retouching"
                         className="flex items-center gap-2 py-2 text-sm font-medium"
                       >
@@ -296,14 +356,16 @@ const NavBar = () => {
                     </SheetClose>
                     <SheetClose asChild>
                       <Link
-                        href="/service/shadow-creation"
+                        aria-label="/service/shadow-making"
+                        href="/service/shadow-making"
                         className="flex items-center gap-2 py-2 text-sm font-medium"
                       >
-                        <FaAdjust /> Shadow Creation
+                        <FaAdjust /> Shadow making
                       </Link>
                     </SheetClose>
                     <SheetClose asChild>
                       <Link
+                        aria-label="/service/jewelry-retouching"
                         href="/service/jewelry-retouching"
                         className="flex items-center gap-2 py-2 text-sm font-medium"
                       >
@@ -312,6 +374,7 @@ const NavBar = () => {
                     </SheetClose>
                     <SheetClose asChild>
                       <Link
+                        aria-label="/service/headshot-retouching"
                         href="/service/headshot-retouching"
                         className="flex items-center gap-2 py-2 text-sm font-medium"
                       >
@@ -333,6 +396,7 @@ const NavBar = () => {
                     </Link> */}
 
                     <Link
+                      aria-label="/service"
                       href="/service"
                       className="flex justify-center rounded bg-slate-50 p-1 font-medium transition-all hover:bg-slate-100 hover:underline"
                     >
@@ -343,19 +407,31 @@ const NavBar = () => {
               </Accordion>
 
               <SheetClose asChild>
-                <Link href="/pricing" className="py-4 text-sm font-medium">
+                <Link
+                  href="/pricing"
+                  aria-label="/pricing"
+                  className="py-4 text-sm font-medium"
+                >
                   Pricing
                 </Link>
               </SheetClose>
               <Separator />
               <SheetClose asChild>
-                <Link href="/free-trial" className="py-4 text-sm font-medium">
+                <Link
+                  href="/free-trial"
+                  aria-label="/free-trial"
+                  className="py-4 text-sm font-medium"
+                >
                   Free Trial
                 </Link>
               </SheetClose>
               <Separator />
               <SheetClose asChild>
-                <Link href="/contact" className="py-4 text-sm font-medium">
+                <Link
+                  href="/contact"
+                  aria-label="/contact"
+                  className="py-4 text-sm font-medium"
+                >
                   Contact
                 </Link>
               </SheetClose>
@@ -365,6 +441,7 @@ const NavBar = () => {
             <SheetFooter>
               <a
                 href="mailto:info@cutoutzone.com"
+                aria-label="email"
                 className="text-gray flex items-center text-[14px] text-muted-foreground duration-200 ease-in"
               >
                 <FaRegEnvelope className="mr-2" />
@@ -374,6 +451,7 @@ const NavBar = () => {
                 <li className="group cursor-pointer rounded-full bg-[rgba(0,0,0,0.07)] p-1 duration-200 ease-in">
                   <a
                     href="https://www.facebook.com/thecutoutzone/"
+                    aria-label="facebook"
                     target="_blank"
                   >
                     <FaFacebookF className="group-hover:text-white-900 text-primary duration-200 ease-in hover:ease-in" />
@@ -383,6 +461,7 @@ const NavBar = () => {
                   <a
                     href="https://www.instagram.com/the_CutOut_Zone"
                     target="_blank"
+                    aria-label="instagram"
                   >
                     <FaInstagram className="group-hover:text-white-900 text-primary duration-200 ease-in hover:ease-in" />
                   </a>
@@ -391,12 +470,17 @@ const NavBar = () => {
                   <a
                     href="https://www.linkedin.com/company/the-cutout-zone/"
                     target="_blank"
+                    aria-label="linkedin"
                   >
                     <FaLinkedinIn className="group-hover:text-white-900 text-primary duration-200 ease-in hover:ease-in" />
                   </a>
                 </li>
                 <li className="group cursor-pointer rounded-full bg-[rgba(0,0,0,0.07)] p-1 duration-200 ease-in hover:bg-primary hover:ease-in">
-                  <a href="https://twitter.com/theCutOutZone" target="_blank">
+                  <a
+                    href="https://twitter.com/theCutOutZone"
+                    aria-label="twitter"
+                    target="_blank"
+                  >
                     <FaXTwitter className="group-hover:text-white-900 text-primary duration-200 ease-in hover:ease-in" />
                   </a>
                 </li>

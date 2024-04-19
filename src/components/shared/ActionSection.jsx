@@ -19,6 +19,7 @@ const ActionSection = () => {
           <Link
             className="flex items-center justify-center gap-2 text-nowrap rounded bg-[#ffffff] px-10 py-3 font-medium text-[#0254B1] transition-all hover:shadow-lg focus:outline-none focus:ring"
             href="/free-trial"
+            aria-label="free-trial"
           >
             <FaPlay /> Free Trial
           </Link>
@@ -26,6 +27,7 @@ const ActionSection = () => {
           <Link
             className="flex items-center justify-center gap-2 text-nowrap rounded border-2 border-[#ffffff] bg-transparent px-10 py-3 font-medium text-[#ffffff] hover:shadow-lg"
             href="/contact"
+            aria-label="contact"
           >
             Free Quote
             <FaQuoteRight />

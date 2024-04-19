@@ -7,6 +7,7 @@ const ServiceCard = ({ service }) => {
   return (
     <Link
       href={`/service/${slug}`}
+      aria-label={slug}
       className="rounded bg-white p-6 text-center"
     >
       <Image
@@ -22,6 +23,7 @@ const ServiceCard = ({ service }) => {
         <p className="text-[#404142]">{excerpt}</p>
         <Link
           href={`/service/${slug}`}
+          aria-label={slug}
           className="flex items-center justify-center gap-2 font-medium text-[#0254B1] hover:underline"
         >
           Read more <FaArrowRight />
