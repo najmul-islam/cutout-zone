@@ -7,6 +7,7 @@ const ServiceItem = ({ service }) => {
   return (
     <Link
       href={`/service/${slug}`}
+      aria-label={slug}
       className="rounded border bg-white p-6 text-center hover:shadow"
     >
       <Image
@@ -22,6 +23,7 @@ const ServiceItem = ({ service }) => {
         <p className="text-[#999999]">{excerpt}</p>
         <Link
           href={`/service/${slug}`}
+          aria-label={slug}
           className="flex items-center justify-center gap-2 font-medium text-[#0254B1] hover:underline"
         >
           Read more <FaArrowRight />

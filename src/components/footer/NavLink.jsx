@@ -14,6 +14,7 @@ const NavLink = () => {
           <Link
             href={item.link}
             className="font-[14px] text-black transition-all hover:underline"
+            aria-label={item.link}
           >
             {item.text}
           </Link>

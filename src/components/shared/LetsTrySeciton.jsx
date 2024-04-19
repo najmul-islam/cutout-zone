@@ -21,6 +21,7 @@ const LetsTrySeciton = () => {
         <Link
           className="m-auto flex w-48 items-center justify-center gap-2 text-nowrap rounded bg-[#0254B1] py-3 font-medium text-[#ffffff] hover:shadow-lg"
           href="/free-trial"
+          aria-label="free-trial"
         >
           <FaRegEye />
           Let's try

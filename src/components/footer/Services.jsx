@@ -44,7 +44,11 @@ const Services = () => {
             key={item.id}
             className="transition-all duration-200 hover:ml-1 hover:text-[#0254B1] hover:underline"
           >
-            <Link href={item.link} className="flex items-center gap-1">
+            <Link
+              href={item.link}
+              className="flex items-center gap-1"
+              aria-label={item.link}
+            >
               <IoIosArrowRoundForward className="text-xl text-[#0254B1]" />{" "}
               {item.text}
             </Link>

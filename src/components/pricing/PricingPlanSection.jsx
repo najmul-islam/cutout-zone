@@ -162,6 +162,7 @@ const PricingPlanSection = () => {
                 <td className="border px-6 py-4">
                   <Link
                     href="/free-trial"
+                    aria-label="free-trial"
                     className="text-nowrap rounded bg-[#0254B1] px-3 py-2 text-white hover:bg-[#097ae4ec] hover:shadow-lg"
                   >
                     Order Now
@@ -170,6 +171,7 @@ const PricingPlanSection = () => {
                 <td className="border px-6 py-4 ">
                   <Link
                     href="/free-trial"
+                    aria-label="free-trial"
                     className="text-nowrap rounded bg-[#0254B1] px-3 py-2 text-white hover:bg-[#097ae4ec] hover:shadow-lg"
                   >
                     Order Now
@@ -178,6 +180,7 @@ const PricingPlanSection = () => {
                 <td className="border px-6 py-4">
                   <Link
                     href="/free-trial"
+                    aria-label="free-trial"
                     className="text-nowrap rounded bg-[#0254B1] px-3 py-2 text-white hover:bg-[#097ae4ec] hover:shadow-lg"
                   >
                     Order Now

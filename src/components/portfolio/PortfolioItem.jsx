@@ -36,6 +36,7 @@ const PortfolioItem = ({ portfolio }) => {
             <Link
               className="rounded-full bg-[#0254B1] p-3 text-2xl text-white transition-colors duration-300 ease-in-out hover:bg-[#097ae4ea]"
               href={`/portfolio/${slug}`}
+              aria-label={slug}
             >
               <MdOutlineOpenInNew />
             </Link>

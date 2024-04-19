@@ -25,6 +25,7 @@ const SubHeader = ({ imgUrl, title, links }) => {
                 <Link
                   href={item.link}
                   title={item.title}
+                  aria-label={item.link}
                   className="text-[#EEEEEE] hover:font-semibold hover:text-white"
                 >
                   {item.title}
