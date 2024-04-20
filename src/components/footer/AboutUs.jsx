@@ -12,7 +12,7 @@ const AboutUs = () => {
         waiting for?
       </p>
 
-      <h6 className="my-3 text-xl font-semibold text-[#0254B1]">Social link</h6>
+      <h2 className="my-3 text-xl font-semibold text-[#0254B1]">Social link</h2>
       <ul className="flex items-center space-x-2">
         <li className="group cursor-pointer rounded-full bg-[rgba(0,0,0,0.07)] p-1 duration-100 ease-in hover:bg-[rgba(0,0,0,0.10)] hover:ease-in">
           <a

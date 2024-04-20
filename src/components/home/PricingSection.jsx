@@ -10,19 +10,19 @@ const PricingSection = () => {
 
       <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-3">
         <PricingCard
-          imgUrl="Pricing-ClippingPath.png"
+          imgUrl="Pricing-ClippingPath.webp"
           title="Clipping Path"
           price="Starting at $0.29/per image"
         />
 
         <PricingCard
-          imgUrl="Pricing-ShadowMaking.png"
+          imgUrl="Pricing-ShadowMaking.webp"
           title="Shadow making"
           price="Starting at $0.49/per image"
         />
 
         <PricingCard
-          imgUrl="Pricing-GhostMannequin.png"
+          imgUrl="Pricing-GhostMannequin.webp"
           title="Ghost mannequin"
           price="Starting at $0.80/per image"
         />

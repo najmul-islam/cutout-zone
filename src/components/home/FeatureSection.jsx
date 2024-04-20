@@ -39,7 +39,7 @@ const FeatureSection = () => {
 
         <div className="p-3">
           <Image
-            src="/service/Home-Feature-Box.jpg"
+            src="/service/Home-Feature-Box.webp"
             width={800}
             height={800}
             alt="Home-Feature-Box"

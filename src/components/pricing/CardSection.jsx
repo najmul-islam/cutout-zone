@@ -14,7 +14,7 @@ const CardSection = () => {
 
         <div className="flex flex-wrap justify-center gap-3 py-6">
           <Image
-            src="/pricing/payoneer-card.png"
+            src="/pricing/payoneer-card.webp"
             width={300}
             height={200}
             alt="payoneer-card"
@@ -22,7 +22,7 @@ const CardSection = () => {
           />
 
           <Image
-            src="/pricing/american-express-card.png"
+            src="/pricing/american-express-card.webp"
             width={300}
             height={200}
             alt="payoneer-card"
@@ -30,7 +30,7 @@ const CardSection = () => {
           />
 
           <Image
-            src="/pricing/visa-card.png"
+            src="/pricing/visa-card.webp"
             width={300}
             height={200}
             alt="payoneer-card"
@@ -38,7 +38,7 @@ const CardSection = () => {
           />
 
           <Image
-            src="/pricing/master-card.png"
+            src="/pricing/master-card.webp"
             width={300}
             height={200}
             alt="payoneer-card"
@@ -46,7 +46,7 @@ const CardSection = () => {
           />
 
           <Image
-            src="/pricing/discover-card.png"
+            src="/pricing/discover-card.webp"
             width={300}
             height={200}
             alt="payoneer-card"
@@ -54,7 +54,7 @@ const CardSection = () => {
           />
 
           <Image
-            src="/pricing/paypal-card.png"
+            src="/pricing/paypal-card.webp"
             width={300}
             height={180}
             alt="payoneer-card"

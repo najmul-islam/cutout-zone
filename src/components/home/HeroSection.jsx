@@ -20,7 +20,7 @@ const HeroSection = () => {
         </div>
         <div className="rounded-full bg-[#5FA7EE]">
           <Image
-            src="/hero/home-hero-girl.png"
+            src="/hero/home-hero-girl.webp"
             // className="w-auto h-auto"
             className=""
             width={700}
