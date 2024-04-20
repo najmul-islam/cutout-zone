@@ -29,7 +29,10 @@ const PortfolioItem = ({ portfolio }) => {
           <div className="absolute bottom-0 left-0 right-0 top-0 flex h-full w-full items-center justify-center gap-3 overflow-hidden bg-[#097ae4] opacity-0 transition duration-300 ease-in-out hover:opacity-30"></div>
           <div className="absolute bottom-0 left-0 right-0 top-0 flex h-full w-full items-center justify-center gap-3 overflow-hidden bg-transparent opacity-0 transition duration-300 ease-in-out hover:opacity-100">
             <DialogTrigger asChild>
-              <button className="rounded-full bg-[#0254B1] p-3 text-2xl text-white transition-colors duration-300 ease-in-out hover:bg-[#097ae4ea]">
+              <button
+                aria-label={slug}
+                className="rounded-full bg-[#0254B1] p-3 text-2xl text-white transition-colors duration-300 ease-in-out hover:bg-[#097ae4ea]"
+              >
                 <MdOutlineZoomOutMap />
               </button>
             </DialogTrigger>
@@ -59,19 +62,24 @@ const PortfolioItem = ({ portfolio }) => {
           />
           <DialogFooter>
             <DialogClose asChild>
-              <Button type="button" variant="secondary" className="w-full">
+              <Button
+                type="button"
+                aria-label={slug}
+                variant="secondary"
+                className="w-full"
+              >
                 Close
               </Button>
             </DialogClose>
           </DialogFooter>
         </DialogContent>
       </Dialog>
-      <h4
+      <h2
         title={title}
         className="rounded-b bg-[#0254B1] py-5 text-center font-semibold text-white"
       >
         {title}
-      </h4>
+      </h2>
     </div>
   );
 };
