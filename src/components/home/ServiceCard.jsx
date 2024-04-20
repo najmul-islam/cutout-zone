@@ -19,7 +19,7 @@ const ServiceCard = ({ service }) => {
       />
 
       <div className="flex flex-col gap-4">
-        <h4 className="text-xl font-bold text-[#09579F]">{title}</h4>
+        <h1 className="text-xl font-bold text-[#09579F]">{title}</h1>
         <p className="text-[#404142]">{excerpt}</p>
         <Link
           href={`/service/${slug}`}
