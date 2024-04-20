@@ -6,8 +6,8 @@ import { FaXTwitter } from "react-icons/fa6";
 
 const TopBar = () => {
   return (
-    <div className="border-b">
-      <nav className="bg-white-900 container hidden justify-between py-2 duration-100 ease-in hover:ease-in md:flex">
+    <div className="border-b bg-white">
+      <nav className="bg-white-900 container hidden justify-between bg-white py-2 duration-100 ease-in hover:ease-in md:flex">
         <a
           href="mailto:info@cutoutzone.com"
           aria-label="email"
