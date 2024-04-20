@@ -21,10 +21,9 @@ const HeroSection = () => {
         <div className="rounded-full bg-[#5FA7EE]">
           <Image
             src="/hero/home-hero-girl.webp"
-            // className="w-auto h-auto"
-            className=""
-            width={700}
-            height={700}
+            className="md:h-[700px] md:w-[700px]"
+            width={400}
+            height={400}
             alt="home-hero-girl"
           />
         </div>
