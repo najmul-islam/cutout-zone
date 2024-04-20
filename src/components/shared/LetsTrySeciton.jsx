@@ -5,7 +5,7 @@ const LetsTrySeciton = () => {
   return (
     <section
       className="bg-cover bg-no-repeat py-10"
-      style={{ backgroundImage: "url(/hero/Element-BG-Try.jpg)" }}
+      style={{ backgroundImage: "url(/hero/Element-BG-Try.webp)" }}
     >
       <div className="container">
         <h1 className="text-center text-2xl font-bold text-white md:text-4xl">
