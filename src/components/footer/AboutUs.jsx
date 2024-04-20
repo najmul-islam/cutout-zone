@@ -4,7 +4,7 @@ import { FaXTwitter } from "react-icons/fa6";
 const AboutUs = () => {
   return (
     <div>
-      <h6 className="mb-3 text-xl font-semibold text-[#0254B1]">About Us</h6>
+      <h2 className="mb-3 text-xl font-semibold text-[#0254B1]">About Us</h2>
       <p className="pr-4 text-sm text-[#404142]">
         CutOut Zone is a place where your images will have a brand new look. Our
         professional designers are always creative and have superficial

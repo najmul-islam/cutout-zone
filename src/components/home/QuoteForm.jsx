@@ -10,19 +10,17 @@ const QuoteForam = () => {
     formState: { errors },
   } = useForm();
 
-  const handleFormSubmit = (data) => {
-    console.log(data);
-  };
+  const handleFormSubmit = (data) => {};
   return (
     <Section className="bg-[#0254B1]">
       <div className="mb-10">
         <h2 className="py-3 text-center text-3xl font-semibold text-white lg:text-4xl">
           Get Your Quote in 45 Minutes
         </h2>
-        <h6 className="text-center text-white">
+        <p className="text-center text-white">
           Fill out the form with details your image editing requirements. We’ll
           get back within 45 minutes.
-        </h6>
+        </p>
       </div>
 
       <form

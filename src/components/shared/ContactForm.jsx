@@ -6,13 +6,10 @@ const ContactForm = () => {
   const {
     register,
     handleSubmit,
-    reset,
     formState: { errors },
   } = useForm();
 
-  const handleFormSubmit = (data) => {
-    console.log(data);
-  };
+  const handleFormSubmit = (data) => {};
 
   return (
     <form

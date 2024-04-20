@@ -4,7 +4,7 @@ import { IoMailOutline, IoVideocamOutline } from "react-icons/io5";
 const Contact = () => {
   return (
     <div>
-      <h6 className="mb-3 text-xl font-semibold text-[#0254B1]">Contact</h6>
+      <h2 className="mb-3 text-xl font-semibold text-[#0254B1]">Contact</h2>
       <ul className="flex flex-col gap-2">
         <li className="transition duration-200 hover:text-[#0254B1] hover:underline">
           <Link
