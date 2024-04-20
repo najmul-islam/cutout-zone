@@ -1,7 +1,6 @@
 "use client";
 import { useForm } from "react-hook-form";
 import countries from "@/data/countryData.json";
-import Image from "next/image";
 import { MdErrorOutline } from "react-icons/md";
 
 const TrialForm = () => {
@@ -15,9 +14,7 @@ const TrialForm = () => {
     },
   });
 
-  const handleFormSubmit = (data) => {
-    console.log(data);
-  };
+  const handleFormSubmit = (data) => {};
 
   return (
     <section className="container flex flex-col-reverse gap-10 py-8 md:flex-row">
