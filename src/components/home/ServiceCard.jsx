@@ -13,9 +13,11 @@ const ServiceCard = ({ service }) => {
       <Image
         src={`/service/${card_media}`}
         className="m-auto mb-3"
-        width={400}
-        height={300}
+        width={370}
+        height={246}
         alt={title}
+        placeholder="blur"
+        blurDataURL={`/service/${card_media}`}
       />
 
       <div className="flex flex-col gap-4">

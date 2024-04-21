@@ -25,6 +25,8 @@ const HeroSection = () => {
             width={400}
             height={400}
             alt="home-hero-girl"
+            placeholder="blur"
+            blurDataURL="/hero/home-hero-girl.webp"
           />
         </div>
       </div>
