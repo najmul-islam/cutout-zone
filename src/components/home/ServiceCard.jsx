@@ -7,7 +7,7 @@ const ServiceCard = ({ service }) => {
   return (
     <Link
       href={`/service/${slug}`}
-      aria-label={slug}
+      aria-label={title}
       className="rounded bg-white p-6 text-center"
     >
       <Image
@@ -21,13 +21,9 @@ const ServiceCard = ({ service }) => {
       <div className="flex flex-col gap-4">
         <h1 className="text-xl font-bold text-[#09579F]">{title}</h1>
         <p className="text-[#404142]">{excerpt}</p>
-        <Link
-          href={`/service/${slug}`}
-          aria-label={slug}
-          className="flex items-center justify-center gap-2 font-medium text-[#0254B1] hover:underline"
-        >
+        <p className="flex items-center justify-center gap-2 font-medium text-[#0254B1] hover:underline">
           Read more <FaArrowRight />
-        </Link>
+        </p>
       </div>
     </Link>
   );

@@ -20,7 +20,7 @@ const SubHeader = ({ imgUrl, title, links }) => {
         </h2>
         <div className="flex items-center space-x-2 text-sm text-gray-500">
           {links?.map((item, index) => (
-            <React.Fragment key={index}>
+            <React.Fragment key={item}>
               {index < links.length - 1 ? (
                 <Link
                   href={item.link}
@@ -31,7 +31,11 @@ const SubHeader = ({ imgUrl, title, links }) => {
                   {item.title}
                 </Link>
               ) : (
-                <span title={item.title} className="font-semibold text-white">
+                <span
+                  title={item.title}
+                  aria-label={item.title}
+                  className="font-semibold text-white"
+                >
                   {item.title}
                 </span>
               )}

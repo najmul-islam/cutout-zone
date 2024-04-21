@@ -12,6 +12,7 @@ const NavLink = () => {
       {links.map((item) => {
         return (
           <Link
+            key={item.id}
             href={item.link}
             className="font-[14px] text-black transition-all hover:underline"
             aria-label={item.link}
