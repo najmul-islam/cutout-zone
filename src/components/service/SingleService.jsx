@@ -8,12 +8,14 @@ const SingleService = ({ service }) => {
       <Image
         src={`/service/${featured_media}`}
         alt={title}
-        width={1000}
-        height={340}
-        className="m-auto h-[240]"
+        width={433}
+        height={123}
+        className="m-auto w-[1000px] "
+        placeholder="blur"
+        blurDataURL={`/service/${featured_media}`}
       />
       <article
-        className="prose m-auto max-w-none px-5 py-10 prose-h1:text-center prose-h1:text-2xl prose-h2:text-xl md:w-9/12 md:prose-h1:text-3xl md:prose-h2:text-2xl lg:w-7/12"
+        className="prose m-auto max-w-none px-5 py-10 prose-h1:text-center prose-h1:text-2xl prose-h2:text-xl prose-img:m-auto md:w-9/12 md:prose-h1:text-3xl md:prose-h2:text-2xl md:prose-img:w-full lg:w-7/12 "
         dangerouslySetInnerHTML={{ __html: content }}
       ></article>
     </section>
