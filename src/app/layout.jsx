@@ -1,4 +1,6 @@
 import { Roboto } from "next/font/google";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/react";
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
 import "./globals.css";
@@ -20,6 +22,8 @@ export default function RootLayout({ children }) {
       <body className={roboto.className}>
         <Header />
         {children}
+        <SpeedInsights />
+        <Analytics />
         <Footer />
       </body>
     </html>
