@@ -9,9 +9,9 @@ const SecurityFaq = () => {
   return (
     <section className="container mb-6">
       <div className="m-auto max-w-[600px] rounded border p-4 pb-0">
-        <h1 className="mb-2 text-center text-xl font-bold md:text-3xl">
+        <h2 className="mb-2 text-center text-xl font-bold md:text-3xl">
           Security Related FAQ
-        </h1>
+        </h2>
         <p className="mb-4 text-center">Know more about our security.</p>
 
         <Accordion type="single" collapsible className="w-full">

@@ -30,7 +30,7 @@ const services = [
   {
     id: 7,
     link: "/service",
-    text: "More",
+    text: "More service",
   },
 ];
 
@@ -47,9 +47,9 @@ const Services = () => {
             <Link
               href={item.link}
               className="flex items-center gap-1"
-              aria-label={item.link}
+              aria-label={item.text}
             >
-              <IoIosArrowRoundForward className="text-xl text-[#0254B1]" />{" "}
+              <IoIosArrowRoundForward className="text-xl text-[#0254B1]" />
               {item.text}
             </Link>
           </li>

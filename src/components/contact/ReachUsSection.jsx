@@ -2,9 +2,9 @@ const ReachUsSection = () => {
   return (
     <section>
       <div className="container py-10">
-        <h1 className="mb-8 text-center text-3xl font-semibold text-[#0254B1]">
+        <h3 className="mb-8 text-center text-3xl font-semibold text-[#0254B1]">
           Reach us
-        </h1>
+        </h3>
 
         <div className="flex flex-col gap-12 md:flex-row">
           <p className="text-justify">

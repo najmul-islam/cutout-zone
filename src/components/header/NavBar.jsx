@@ -184,7 +184,7 @@ const NavBar = () => {
 
                 <Link
                   href="/service"
-                  aria-label="/service"
+                  aria-label="service"
                   className="flex justify-center bg-slate-50 p-4 font-medium transition-all hover:bg-slate-100 hover:underline"
                 >
                   More service
@@ -242,7 +242,7 @@ const NavBar = () => {
           </SheetTrigger>
           <SheetContent>
             <SheetHeader>
-              <Link href="/">
+              <Link href="/" aria-label="home">
                 <SheetTitle>Cut Out Zone</SheetTitle>
               </Link>
               <SheetClose asChild>
@@ -396,7 +396,7 @@ const NavBar = () => {
                     </Link> */}
 
                     <Link
-                      aria-label="/service"
+                      aria-label="service"
                       href="/service"
                       className="flex justify-center rounded bg-slate-50 p-1 font-medium transition-all hover:bg-slate-100 hover:underline"
                     >

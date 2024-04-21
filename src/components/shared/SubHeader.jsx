@@ -10,8 +10,10 @@ const SubHeader = ({ imgUrl, title, links }) => {
         src={`/subheader/${imgUrl}`}
         alt={imgUrl}
         className="h-full w-full object-cover"
-        width={1920}
+        width={400}
         height={200}
+        placeholder="blur"
+        blurDataURL={`/subheader/${imgUrl}`}
       />
       <div className="absolute inset-0 bg-[#0254B1] opacity-80"></div>
       <div className="absolute inset-0 flex flex-col items-center justify-center">
