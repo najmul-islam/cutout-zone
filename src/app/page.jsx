@@ -12,6 +12,13 @@ export const metadata = {
   title: "Cut Out service | image excellence service provider",
   description:
     "CutOut Zone is one of the biggest image editing and graphic design companies in Asia. We have more than 7 years of working experience.",
+  openGraph: {
+    images: [
+      {
+        url: `/service/og/opengraph-image.jpg`,
+      },
+    ],
+  },
 };
 
 const HomePage = () => {
