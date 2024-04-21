@@ -6,6 +6,7 @@ const MapSection = () => {
         width="100%"
         height="600px"
         loading="lazy"
+        title="maps"
         referrerPolicy="no-referrer-when-downgrade"
         className="h-[400px] w-[100%]  rounded border-2 border-[#0979E4] md:h-[600px]"
       ></iframe>

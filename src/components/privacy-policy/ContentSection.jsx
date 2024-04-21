@@ -1,8 +1,8 @@
 const ContentSection = () => {
   return (
     <section className="py-10">
-      <article className="prose container">
-        <h1>1. Privacy policy</h1>
+      <article className="container prose">
+        <h1>Privacy policy</h1>
         <p>
           The most necessary things to <strong>CutOut Zone</strong> are your
           privacy. For this reason, our privacy policy consists of what
@@ -25,7 +25,7 @@ const ContentSection = () => {
           Please have a look at the privacy policy as clarified by us on our
           website.
         </p>
-        <h1>2. What individual information do usually we gather</h1>
+        <h2>What individual information do usually we gather</h2>
         <p>
           We sometimes may gather your personal information to give you the best
           service. The data we collect depends on our offer, promotion, and
@@ -46,14 +46,14 @@ const ContentSection = () => {
           <li className="font-semibold">Website (optional)</li>
         </ul>
 
-        <h2>Use of information</h2>
+        <h3>Use of information</h3>
         <p>
           The information you provide is used to personalize services,
           facilitate communication, and tailor promotions to your preferences.
           We ensure the security and confidentiality of your data in compliance
           with privacy regulations.
         </p>
-        <h2>Why we use your personal information given below:</h2>
+        <h3>Why we use your personal information given below:</h3>
         <ul>
           <li className="font-semibold">The collected information we gather</li>
           <li className="font-semibold">To reach our clients easily</li>
@@ -65,7 +65,7 @@ const ContentSection = () => {
           </li>
           <li className="font-semibold">For many other business purposes</li>
         </ul>
-        <h1>4. With whom do we share your information?</h1>
+        <h3>With whom do we share your information?</h3>
         <p>
           We may share the collected information (credit card number) to our
           transactional vendors on our behalf. This is done only for
@@ -82,25 +82,25 @@ const ContentSection = () => {
             To help the law enforcing agencies to investigate
           </li>
         </ul>
-        <h2>Your photo policy</h2>
+        <h3>Your photo policy</h3>
         <p>
           When you browse through the <strong>CutOut Zone</strong>, you may
           upload your images to the site for a free trial service to test our
           service standard. You can simply leave a request us to edit the images
         </p>
-        <h2>Our privacy policy includes</h2>
+        <h3>Our privacy policy includes</h3>
         <p>Keep your image private and do not display it.</p>
         <p>
           If <strong>CutOut Zone</strong> is permitted to use your photos, we
           may share it anywhere on the site or elsewhere
         </p>
-        <h1>5. Security of personal information</h1>
+        <h2>Security of personal information</h2>
         <p>
           We are bound to take proper reasonable security measures to save your
           personally identifiable information. We are so aware that your data
           security and photos of all rights are totally reserved.
         </p>
-        <h2>Changes to the privacy policy</h2>
+        <h3>Changes to the privacy policy</h3>
         <p>
           We may change our privacy policy if it is required. The change will be
           made by us to make updates and provide you the most time-be-fitted
@@ -112,7 +112,7 @@ const ContentSection = () => {
           will always find the updated news at the top of the page.
         </p>
 
-        <h4>Last updated on: April 12, 2023</h4>
+        <p className="text font-semibold">Last updated on: April 12, 2023</p>
       </article>
     </section>
   );

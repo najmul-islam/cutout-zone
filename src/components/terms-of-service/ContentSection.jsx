@@ -1,8 +1,8 @@
 const ContentSection = () => {
   return (
     <section className="py-10">
-      <article className="prose container">
-        <h1>1. Introduction</h1>
+      <article className="container prose">
+        <h1 className="text-center">Introduction</h1>
         <p>
           Before you begin to submit your project or making an account with
           <strong> CutOut Zone</strong>, please read the following Terms of
@@ -10,7 +10,7 @@ const ContentSection = () => {
           guide to give you access and make you enjoy our{" "}
           <a href="https://cutoutzone.com" target="_blank">
             cut out
-          </a>{" "}
+          </a>
           service.
         </p>
         <p>
@@ -26,7 +26,7 @@ const ContentSection = () => {
           those new changes or recently updated.
         </p>
 
-        <h1>2. Our services</h1>
+        <h2>Our services</h2>
         <p>
           <strong>CutOut Zone </strong> graphic design company has a lot of
           well-trained expertise in Photoshop. So we don’t have to worry about
@@ -67,7 +67,7 @@ const ContentSection = () => {
           Google Drive.
         </p>
 
-        <h1>3. Specification and Prices</h1>
+        <h2>Specification and Prices</h2>
         <p>
           The price displayed on our webpage may change with the prices which
           offered to our clients. We can’t always tell our fixed price as it
@@ -85,7 +85,7 @@ const ContentSection = () => {
           terminate the contract at any time.
         </p>
 
-        <h1>4. Submission</h1>
+        <h2>Submission</h2>
         <p>
           As a client, when you submit certain images to{" "}
           <strong> CutOut Zone</strong>, we request you to follow some terms of
@@ -125,17 +125,17 @@ const ContentSection = () => {
           service.
         </p>
 
-        <h1>5. Payment and refund</h1>
+        <h2>Payment and refund</h2>
         <p>
           Our prices are quoted in US dollars ($) for a client across the globe
           and the Euro (€) for customers who are from Europe.
         </p>
-        <h2>Billing and shipping information</h2>
+        <h3>Billing and shipping information</h3>
         <p>
           Firstly, we usually accept payment via PayPal. PayPal is considered to
           be one of the safest and most secure ways to pay online.
         </p>
-        <h2>Refund</h2>
+        <h3>Refund</h3>
         <p>
           If we cannot deliver our work in time for the first time, we will
           refund your payment. If any of our clients are unhappy with our work,
@@ -175,7 +175,7 @@ const ContentSection = () => {
           </strong>
         </p>
 
-        <h1>6. Free trial</h1>
+        <h2>Free trial</h2>
         <p>
           We have an option to provide the professional photographer and the
           other agency of the photographic world with a free trial service. Our
@@ -196,7 +196,7 @@ const ContentSection = () => {
           Please get in touch with us to know more about free trial services.
         </p>
 
-        <h1>7. Photo replacement</h1>
+        <h2>Photo replacement</h2>
         <p>
           Photo replacement is not accepted after the order is placed. If you
           have sent the wrong image, you should not request us to edit another
@@ -204,7 +204,7 @@ const ContentSection = () => {
           consequence of sending the wrong photo fall on your shoulder.
         </p>
 
-        <h4>Last updated on: April 12, 2023</h4>
+        <p className="font-semibold">Last updated on: April 12, 2023</p>
       </article>
     </section>
   );

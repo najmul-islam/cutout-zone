@@ -9,9 +9,9 @@ const SupportFaq = () => {
   return (
     <section className="container mb-6">
       <div className="m-auto max-w-[600px] rounded border p-4 pb-0">
-        <h1 className="mb-2 text-center text-xl font-bold md:text-3xl">
+        <h2 className="mb-2 text-center text-xl font-bold md:text-3xl">
           Support Related FAQ
-        </h1>
+        </h2>
         <p className="mb-4 text-center">
           How to get in touch and deal with us.
         </p>

@@ -22,9 +22,11 @@ const PortfolioItem = ({ portfolio }) => {
           <Image
             src={`/portfolio/${featured_media}`}
             alt={title}
-            width={300}
-            height={250}
+            width={431}
+            height={431}
             className="h-full w-full"
+            placeholder="blur"
+            blurDataURL={`/portfolio/${featured_media}`}
           />
           <div className="absolute bottom-0 left-0 right-0 top-0 flex h-full w-full items-center justify-center gap-3 overflow-hidden bg-[#097ae4] opacity-0 transition duration-300 ease-in-out hover:opacity-30"></div>
           <div className="absolute bottom-0 left-0 right-0 top-0 flex h-full w-full items-center justify-center gap-3 overflow-hidden bg-transparent opacity-0 transition duration-300 ease-in-out hover:opacity-100">
