@@ -205,7 +205,7 @@ const TrialForm = () => {
         </form>
       </div>
       <div className="prose w-full md:w-1/2 lg:pt-5">
-        <h3>How to upload sample image?</h3>
+        <h2>How to upload sample image?</h2>
         <ul>
           <li>You can send us your free trial images for assessment.</li>
           <li>
@@ -221,7 +221,7 @@ const TrialForm = () => {
             recommendations.
           </li>
         </ul>
-        <h3>Before you go...</h3>
+        <h2>Before you go...</h2>
         <ul>
           <li>
             Our services accommodate various image formats including RAW, JPEG,

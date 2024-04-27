@@ -43,6 +43,8 @@ const FeatureSection = () => {
             width={800}
             height={800}
             alt="Home-Feature-Box"
+            placeholder="blur"
+            blurDataURL="/service/Home-Feature-Box.webp"
           />
         </div>
 

@@ -24,8 +24,8 @@ export async function generateMetadata({ params }) {
 }
 
 export async function generateStaticParams() {
-  return portfolios.map((portfoli) => ({
-    slug: portfoli.slug,
+  return portfolios.map((portfolio) => ({
+    slug: portfolio.slug,
   }));
 }
 
