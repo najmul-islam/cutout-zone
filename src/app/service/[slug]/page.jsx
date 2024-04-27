@@ -1,20 +1,25 @@
+import FeaturedMedia from "@/components/service/FeaturedMedia";
 import RelatedService from "@/components/service/RelatedService";
+import Sidebar from "@/components/service/Sidebar";
 import SingleService from "@/components/service/SingleService";
 import LetsTrySeciton from "@/components/shared/LetsTrySeciton";
 import SubHeader from "@/components/shared/SubHeader";
 import services from "@/data/serviceData.json";
 import { notFound } from "next/navigation";
 
-export async function generateMetadata({ params }) {
+export async function generateMetadata({ params }, parent) {
   const getPortfolioBySlug = (slug) => {
     return services.find((service) => service?.slug === slug);
   };
 
   const service = getPortfolioBySlug(params?.slug);
-
+  const prevImg = parent.openGraph?.images || [];
   return {
     title: service?.meta_title,
     description: service?.meta_description,
+    alternates: {
+      canonical: `/service/${service?.slug}`,
+    },
     openGraph: {
       images: [
         {
@@ -71,12 +76,18 @@ const SingleServicePage = ({ params }) => {
 
   return (
     <>
-      <SubHeader
-        imgUrl="Page-Single-Service-Subheader.jpg"
-        title={service?.title}
-        links={links}
-      />
-      <SingleService service={service} />
+      <div className="container grid grid-cols-1 gap-2 md:grid-cols-4">
+        <div className="py-5 md:col-span-4">
+          <FeaturedMedia service={service} />
+        </div>
+        <div className="md:col-span-1">
+          <Sidebar service={service} />
+        </div>
+        <div className="md:col-span-3">
+          <SingleService service={service} />
+        </div>
+      </div>
+
       <RelatedService services={relatedService} />
       <LetsTrySeciton />
     </>
